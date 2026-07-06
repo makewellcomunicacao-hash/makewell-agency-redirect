@@ -103,7 +103,7 @@
   .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; }
   .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-  .mobile-menu { display: none; position: fixed; inset: 0; background: #080808; z-index: 199; flex-direction: column; justify-content: flex-start; padding: 100px 36px 36px; gap: 0; }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: #080808; z-index: 1500; flex-direction: column; justify-content: flex-start; padding: 100px 36px 36px; gap: 0; }
   .mobile-menu.open { display: flex; }
   .mobile-menu a.mobile-link { font-size: 13px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: #999; text-decoration: none; padding: 20px 0; width: 100%; border-bottom: 1px solid #161616; transition: color .2s, border-color .2s; display: flex; align-items: center; justify-content: space-between; }
   .mobile-menu a.mobile-link .mn { font-size: 10px; font-weight: 600; letter-spacing: 1px; color: #666; transition: color .2s; }
@@ -115,7 +115,7 @@
 
   main { max-width: 1120px; margin: 0 auto; padding: calc(72px + env(safe-area-inset-top,0px) + 48px) 60px 120px; }
 
-  .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #666; text-decoration: none; margin-bottom: 32px; transition: color .2s; }
+  .back-link { display: flex; width: fit-content; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #666; text-decoration: none; margin-bottom: 32px; transition: color .2s; }
   .back-link:hover { color: var(--gold-light); }
   .back-link svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   EOF
@@ -187,6 +187,7 @@ echo saved.kicker { display: inline-block; font-size: 12px; letter-spacing: .2em
     nav { padding: env(safe-area-inset-top,0px) 20px 0; background: #080808; }
     .nav-links { display: none; }
     #lang-toggle { display: none; }
+    #lang-dropdown { display: none; }
     .btn-nav { display: none;min-height:44px;}
     .hamburger { display: flex; }
     main { padding: calc(72px + env(safe-area-inset-top,0px) + 48px) 20px 80px; }
